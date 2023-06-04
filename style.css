@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Geologica', sans-serif;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar styling */
+.navbar-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 6vw;
+}
+
+.navbar-options{
+    font-weight: 500;
+    font-size: 17px;
+    color: 	#989898 !important;
+}
+
+.navbar-search{
+    margin-right: 6vw;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.navbar-options:hover{
+    font-size: 20px;
+}
+
+
+/* For responsive behaviour styling */
+
+@media only screen and (max-width: 500px) {
+    .carousel-caption h5{
+        font-size: 12px;
+    }
+
+    .carousel-caption p{
+        font-size: 8px;
+    }
+
+    .carousel-caption .btn{
+        font-size: 9px;
+        width: 80px;
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-title{
+        font-size: 24px;
+    }
+    .navbar-options{
+        font-size: 15px;
+    }
+}
+
+/* Package section Styling */
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.section-2-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 80%;
+
+}
+
+.sec-2-each-cont{
+    width: 300px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;   
+    transition-property: all;
+    transition-duration: 0.4s; 
+}
+
+.sec-2-each-cont:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.sec-2-image{
+    width: 100%;
+    border-radius: 12px;
+    height: 170px;
+}
+
+.sec-2-desc{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+
+}
+
+/* responsive  Styling */
+@media only screen and (max-width: 350px) {
+    .sec-2 h1{
+        font-size: 24px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+
+    .sec-2-each-cont{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+    .sec-2 h1{
+        font-size: 28px;
+    }
+
+    .sec-2-each-cont{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/* Gallery section Styling */
+.sec-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.sec-3 h1{
+    margin-bottom: 40px;  
+}
+
+
+
+
+.sec-3-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-gap: 10px 10px;
+    width: 80%;
+
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    justify-content: center;
+
+
+    margin-bottom: 30px;
+}
+
+.v-stretch{
+    grid-row: span 2;
+}
+
+.h-stretch{
+    grid-column: span 2;
+}
+
+.big-stretch{
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+
+.sec-3-cont div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* styling upto 699px device*/
+@media only screen and (max-width: 699px){
+    .sec-3 h1{
+        font-size: 24px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+
+    .sec-3-cont{
+        grid-auto-rows: 100px;
+    }
+
+}
+
+
+/* Best Places section Styling */
+.sec-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-4-cont{
+    margin-top: 30px;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card{
+    margin-right: 25px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.card-body .btn{
+    transition-property: all;
+    transition-duration: 0.4s;
+    
+}
+
+.card-text{
+    color: #808080;
+}
+
+.card-body .btn:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+@media only screen and (max-width: 699px){
+    .sec-4-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .sec-4 h1{
+        font-size: 24px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+}
+
+
+/* Footer section Styling */
+.footer{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 60px;
+    width: 100%;
+    background-color: #ebedf0;
+}
+
+.footer-bot-left{
+    font-weight: bold;
+    
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.contacts div{
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+}
+
+.useful-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.more-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.links-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+h4{
+    font-weight: 600;
+}
+
+.li{
+    text-decoration: none;
+    color: #808080;
+
+}
+
+/* responsive styling for devices under 530px) */
+
+@media only screen and (max-width: 530px){
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    .link-button{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: end;
+
+        width: 100%;
+        margin-right: 50px;
+       
+    }
+
+    .footer-bot-right{
+       
+        width: 100%;
+    }
+
+    .contacts{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .useful-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .more-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .links-cont{
+        align-items: center;
+    }
+    
+}
